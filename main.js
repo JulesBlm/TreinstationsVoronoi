@@ -61,7 +61,7 @@ g.call(d3.axisBottom(x)
 var inputElems = d3.selectAll("input")
   .on("change", function() {
     if (this.value === "Hide") {d3.select(".voronoi").style("opacity", 0);}
-    else if (this.value === "Show") {d3.select(".voronoi").style("opacity", 1)}
+    else if (this.value === "Show") {d3.select(".voronoi").style("opacity", 0.55)}
 })
 
 d3.queue()
