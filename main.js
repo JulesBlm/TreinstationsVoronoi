@@ -21,17 +21,9 @@ var color = d3.scaleThreshold()
     .domain([0, 100, 500, 750, 1500, 2500, 7500, 12500])
     .range(d3.schemeGnBu[9]);
 
-var x = d3.scaleSqrt()
+var x = d3.scaleLinear()
     .domain([0, 12500])
     .rangeRound([10, 890]);
-
-// var color = d3.scaleThreshold()
-//     .domain([50, 500, 1000, 5000, 10000, 20000, 50000, 80000])
-//     .range(d3.schemeGnBu[9]);
-
-// var x = d3.scaleSqrt()
-//     .domain([0, 80000])
-//     .rangeRound([0, 890]);
 
 var g = svgLegend.append("g")
     .attr("class", "key")
