@@ -84,8 +84,8 @@ function ready(error, wijken, stations, spoor) {
       .text(function(d) { return (
         d.properties.GM_NAAM + " "
         + ((d.properties.WK_NAAM !== null) ? d.properties.WK_NAAM : "")
-        + "\nGem. afstand tot station: " + d.properties.AF_TREINST + " km"
-        + ((d.properties.BEV_DICHTH !== -99999998 || -99999997) ? "\nBev. dichtheid: " + format(d.properties.BEV_DICHTH) : "")
+        + "\nGemiddelde afstand tot station: " + d.properties.AF_TREINST + " km"
+        + ((d.properties.BEV_DICHTH !== -99999998 || -99999997) ? "\nBevolkingsdichtheid: " + format(d.properties.BEV_DICHTH) : "")
         + ((d.properties.AANT_INW !== -99999998) ? "\nAantal Inwoners: " + format(d.properties.AANT_INW) : "")
         );
       });
